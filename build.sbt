@@ -24,8 +24,6 @@ ThisBuild / libraryDependencies  ++= Seq(
 // No need for `sbt doc` to fail on warnings
 val docSettings = Compile / doc / scalacOptions -= "-Xfatal-warnings"
 
-ThisBuild / scalafixScalaBinaryVersion := CrossVersion.binaryScalaVersion(scalaVersion.value)
-
 ThisBuild / bintrayOrganization := Some("streamz")
 ThisBuild / bintrayReleaseOnPublish := false
 
